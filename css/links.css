@@ -1,0 +1,28 @@
+a {
+	color: #B15278;
+	text-decoration:underline;
+}
+
+.imgLink {
+	text-decoration:none;
+}
+
+.secondary-link {
+	color: #FFFFFF;
+}
+
+#address-container .primary-link {
+	font-size: 17px;
+}
+
+#login-link {
+	font-size: 12px;
+	color: orange;
+	float: right;
+	margin-right: 33px;
+	margin-top: 8px;
+}
+
+#login-link:hover {
+	color: gray;
+}

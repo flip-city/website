@@ -1,0 +1,141 @@
+img {
+	border-style:none;
+	
+}
+.button {
+	border-radius: 10px 10px 10px 10px;
+	padding: 4px;
+}
+
+.signup-button {
+	background: #64b2e9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #64b2e9 8%, #4884AF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#64b2e9), color-stop(100%,#4884AF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #64b2e9 8%,#4884AF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #64b2e9 8%,#4884AF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #64b2e9 8%,#4884AF 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #64b2e9 8%,#4884AF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64b2e9', endColorstr='#4884AF',GradientType=0 ); /* IE6-9 */
+	/*box-shadow: -1px 1px 1px 1px #AAB2BA;*/
+	
+	border-radius: 10px 10px 10px 10px;
+	
+-moz-box-shadow: -8px 6px 5px -2px #813E81;
+-webkit-box-shadow: -8px 6px 5px -2px #813E81;
+box-shadow: -8px 6px 5px -2px #813E81;
+margin: 10px;
+margin-top: 0px;
+}
+
+.signup-image {
+	margin: 0;
+	height: 3.3em;
+	display: inline-block;
+}
+.signup-button:hover {
+	background: #64b2e9;
+}
+
+.signup-button:active {
+	box-shadow: none;
+}
+
+.button.promo img {
+	height: 110px;
+	
+}
+
+#openGymPromoButton {
+	background: #F963BB; /* Old browsers */
+	background: -moz-linear-gradient(top,  #F963BB 1%, #F934A7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#F963BB), color-stop(100%,#F934A7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #F963BB 1%,#F934A7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #F963BB 1%,#F934A7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #F963BB 1%,#F934A7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #F963BB 1%,#F934A7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F963BB', endColorstr='#F934A7',GradientType=0 ); /* IE6-9 */
+	box-shadow: -1px 3px 4px 3px #060808;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+#openGymPromoButton:hover, #openGymPromoButton:active, #openGymPromoButton.selected {
+	background: #ff60bf;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#birthdaysPromoButton {
+	background: #64b2e9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #64b2e9 8%, #4a85c2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#64b2e9), color-stop(100%,#4a85c2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #64b2e9 8%,#4a85c2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #64b2e9 8%,#4a85c2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #64b2e9 8%,#4a85c2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #64b2e9 8%,#4a85c2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64b2e9', endColorstr='#4a85c2',GradientType=0 ); /* IE6-9 */
+	box-shadow: -1px 3px 4px 3px #060808;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+#birthdaysPromoButton:hover, #birthdaysPromoButton:active, #birthdaysPromoButton.selected {
+	background: #64b2e9;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#birthdaysPromoButton img {
+	padding-left: 1px;
+}
+
+#enrollment-details{
+	display:inline-block;
+}
+
+#parentsNightOutPromoButton {
+	background: #a977f4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a977f4 14%, #9455f3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,#a977f4), color-stop(100%,#9455f3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a977f4 14%,#9455f3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a977f4 14%,#9455f3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a977f4 14%,#9455f3 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a977f4 14%,#9455f3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a977f4', endColorstr='#9455f3',GradientType=0 ); /* IE6-9 */
+	box-shadow: -1px 3px 4px 3px #060808;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+#parentsNightOutPromoButton:hover, #parentsNightOutPromoButton:active, #parentsNightOutPromoButton.selected {
+	background: #a977f4;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#cartwheelPromoButton {
+	background: #efa970; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efa970 14%, #f1984d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,#efa970), color-stop(100%,#f1984d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efa970 14%,#f1984d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efa970 14%,#f1984d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efa970 14%,#f1984d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #efa970 14%,#f1984d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efa970', endColorstr='#f1984d',GradientType=0 ); /* IE6-9 */
+	box-shadow: -1px 3px 4px 3px #060808;
+	margin-left: 0;
+	margin-right: 0;
+	height:150px;
+}
+#cartwheelPromoButton img {
+	height:140px;
+}
+
+#cartwheelPromoButton:hover, #cartwheelPromoButton:active, #cartwheelPromoButton.selected {
+	background: #efa970;
+	margin-left: 0;
+	margin-right: 0;
+}

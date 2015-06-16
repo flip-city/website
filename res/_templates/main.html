@@ -1,0 +1,81 @@
+<script id="_programInfo" type="text/template">
+	<div class='info-row secondary-text-format'>
+			<div class='title main-emphasis'>
+				<%- name %>
+			</div>
+			<div class="info-tag-container">
+				<div class='info-cell info-tag age'>
+					<%- ages %>
+				</div>
+				<!-- See if levels exists in the object.  Arguments[0] is the data object passed via the templating function -->
+			<%if(_.contains(_.keys(arguments[0]), "levels")) { %>
+			<div class='info-cell info-tag level'>
+				<%- levels %>
+			</div>
+			<% } %>
+			</div>
+			 
+		<div class='info-cell full'>
+			
+			<div class='info-cell buffer description'>
+				<%- description %>
+				
+			</div>
+			<div class='info-cell right'>
+				<div class='button signup-button'>
+					<a href='<%- link %>' target='_blank'>
+						<img class='signup-image' src='images/schedule-pricing.png' />
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="_tabsMenu" type="text/template">
+		<ul class="tabnav">
+		<% _.each(tabs, function(tab) { %>
+			<li>
+				<a id="<%- tab.name %>-tabnav" class="tab-button" data-display="tabs-<%- tab.name %>" href="#tabs-<%- tab.name %>">
+					<% if(tab.image){%>
+						<img id="<%- tab.name %>-image" src="<%-tab.image %>" />
+					<% } else {
+						print(tab.label);
+					   }
+					%>
+				</a>
+			</li>
+		<% }); %>
+		</ul>
+		<% _.each(tabs, function(tab) { %>
+			<div id="tabs-<%- tab.name %>" class="tabdiv">
+				<% print(render()[tab.name + "Menu"](tab.data)); %>
+			</div>
+		<% }); %>
+		<% _.each(promos, function(tab) { %>
+			<div id="tabs-<%- tab.name %>" class="tabdiv promodiv">
+				<% print(render()[tab.name + "Menu"](tab.data)); %>
+			</div>
+		<% }); %>
+</script>
+
+<script id="_promosMenu" type="text/template">
+		<% _.each(promos, function(promo) { 
+			if(!promo.standAlone) {
+		%>
+			
+		<a href="#tabs-<%- promo.name %>">
+			<div id="<%- promo.name %>PromoButton" class="button promo"  data-display="tabs-<%- promo.name %>">
+				<img src="<%- promo.image %>"/>
+			</div>
+		</a>
+		
+		<% }}); %>
+</script>
+
+<script id="_promoMenu" type="text/template">
+	<div id="promoMenu">
+		Promo Menu
+	</div>
+</script>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Flip City Classes</title>
+	<script type="text/javascript" src="../../js/jquery/jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" href="../../css/table-list.css">
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/buttons.css">
+	<link rel="stylesheet" href="../../css/text.css">
+	<link rel="stylesheet" href="../../css/table-list.css">
+	<link rel="stylesheet" href="../../css/registration.css">
+	<link rel="stylesheet" href="../../css/pallet.css">
+	<link rel="stylesheet" href="../../css/links.css">
+	
+	<script src="../external/jquery.tmpl.js"></script>
+	<script src="../ui/jquery.ui.core.min.js"></script>
+	<script src="../ui/jquery.ui.widget.min.js"></script>
+	<script src="../ui/jquery.ui.button.min.js"></script>
+	
+	<script type="text/javascript" >
+	var log = function(text) {
+		$(document.body).append(text + '<br/>');
+	};
+
+	$(document).ready(function() {
+
+		$.getJSON("data/classes.json", function( programs ) {
+			var items = [];
+
+			// Account for parent "programs" entry
+			// TODO Remove scrollbar
+			$.each(programs, function(key, value) {
+		
+				$.each(value, function(key,value) {
+				
+					$("#programs-body").append(
+						"<div class='info-row'>" + 
+							"<div class='info-cell full'><div class='title'>" + value.name + "</div>" +
+							"<div class='info-cell age'>" + value.ageLevel + "</div></div>" +
+							"<div class='info-cell full'><div class='info-cell'><div class='button signup-button'>" +
+							"<a href='" + value.link + "' target='_blank'>" +
+							"<img class='signup-image' src='images/schedule-pricing.png' /></a></div></div>" + 
+							
+							"<div class='info-cell'>" + value.description + "</div></div>" +
+						"</div>"
+					);
+					
+				});
+			});
+		})
+		.error(function(jqXHR, textStatus, errorThrown) {
+
+			log("Error: " + textStatus);
+			log("Incoming Text " + jqXHR.responseText);
+			
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="info-table">
+	<div id="programs-body">
+	</div>
+</div>
+
+</body>
+
+
+</html>

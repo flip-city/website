@@ -1,0 +1,33 @@
+{
+	"teams" : 
+	[
+		{ 
+			"name" : "Mini Pre-Team",
+			"ages" : "Ages 4-6",
+			"levels" : "Levels 1-2",
+			"description" : "For young girls who demonstrate strength, a desire to learn, and a strong ability to focus. This is a non-competitive team program. Students may progress to either Pre-Team or Junior Team at age 7, depending on their progress.",
+			"link" : "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=10&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Pre-Team",
+			"ages" : "Ages 7-12",
+			"levels" : "Level 2",
+			"description" : "For younger students who have mastered the Level 1 skills and wish to pursue competitive gymnastics. Students progress to Junior Team.",
+			"link" : "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=12&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Junior Team",
+			"ages" : "Ages 7+",
+			"levels" : "Level 3",
+			"description" : "For students who have mastered level 1 and 2 skills and wish to participate in competitive gymnastics. Gymnasts attend 3-5 competitive meets each season.",
+			"link" : "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=7&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Senior Team",
+			"ages" : "Ages 9+",
+			"levels" : "Levels 4-5",
+			"description" : "Gymnasts who are deciated and focused are selected to join Senior Team. Gymnasts attend 4 or more competitive meets per season.",
+			"link" : "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=6&filters=SUBMIT"
+		}
+	]
+}

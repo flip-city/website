@@ -1,0 +1,375 @@
+<script id="_homeMenu" type="text/template">
+	<div id="homeMenu"  class="menu">
+	<ul id="slider-container">
+		<li><div class="imgContainer"><img src="images/team-2015.jpg" /></div><div class="secondary-text-format slider-overlay">Saluting at the Dairy Aire Gymnastics meet</div></li>
+	<li><div class="imgContainer"><img src="images/pic1.jpg" /></div><div class="secondary-text-format slider-overlay">All smiles at summer camp!</div></li>
+	</ul>
+	<div id="blog" class="main-text-format wordBoxContainer">
+		
+	</div>
+	</div>
+</script>
+
+<script id="_blogPost" type="text/template">
+	<div class="post text-paper">
+				<p class="date" style="font-style:italic;" align="left">
+					<%- post.date %>
+				</p>
+				<p class="header">
+					<% if (post.imageURL){ var mysrc = 'images/' + post.imageURL;%><img class="post-image" src="<%print(mysrc)%>" /><%}%><%- post.header %>
+				</p>
+				<div class="body">
+					
+				</div>	
+				</p>
+			
+			</div>
+				<div class="seperator" />
+</script>
+
+
+<script id="_oneMonthEnrollmentDetails" type="text/template">
+	<div class="inlay">
+	<ul>
+
+	<li>		<div class="text-paper">The full month's tuition is due regardless of how many days the gymnast attends classes during that month.</p></div>
+	</li>
+	<li>		<div class="text-paper">Tuition is pro-rated if a gymnast enrolls in a class during the middle of the month.</p></div>
+	</li>
+
+	<li>		<div class="text-paper">Each gymnast may attend up to 6 make-up classes per year.</p></div>
+	</li>
+
+	<li>		<div class="text-paper">Flip City offers one free trial class per new student! Select "Trial" as your enrollment type when registering for a class. Note that registration for a trial class will not save a student's spot on the roster.</p></div>
+	</li>
+
+	</ul>
+
+	</div>
+
+</script>
+<script id="_continuousEnrollmentDetails" type="text/template">
+	<div class="inlay">
+	<ul>
+	<li>
+	<div class="text-paper">Class session tuition is billed monthly, due on the first class of the month.</p></div>
+	</li>
+	<li>
+	<div class="text-paper">The gymnast's first and last month's tution is due at class registration.</p></div>
+	</li>
+	<li>		<div class="text-paper"><p>The last month's tuition will be held as a non-refundable deposit, and we will apply the deposit towards your tuition on the first payment due date after a cancellation notice is receieved from you.</p></div>
+	</li>
+	<li>		<div class="text-paper"><p>The full month's tuition is due regardless of how many days the gymnast attends classes during that month.</p></div>
+	</li>
+	<li>		<div class="text-paper"><p>Tuition is pro-rated if a gymnast enrolls in a class during the middle of the month.</p></div>
+	</li>
+
+	<li>		<div class="text-paper"><p>Each gymnast may attend up to 6 make-up classes per year.</p></div>
+	</li>
+	<li>		<div class="text-paper"><p>Your gymnast will be automatically unenrolled after being absent for two weeks without notice or payment.</p></div>
+	</li>
+	<li>		<div class="text-paper"><p>Flip City offers one free trial class per new student! Select "Trial" as your enrollment type when registering for a class. Note that registration for a trial class will not save a student's spot on the roster.</p></div>
+	</li>
+
+	</ul>
+
+	</div>
+
+</script>
+<script id="_enrollmentDetailsMenu" type="text/template">
+	<div><p><img class="bang" src="images/bang.png"/>When registering for a class, leave the end-date blank to sign up for Continuous Enrollment, otherwise please specify an end-date.</p></div>
+	<ul id="enrollment-details-options">
+	<li><a class="secondary-text-format" href="#continuousEnrollmentDetails">Continuous Enrollment</a></li>
+	<li><a class="secondary-text-format" href="#oneMonthEnrollmentDetails">One Month Enrollment</a></li>
+
+	</ul>
+	<div id="oneMonthEnrollmentDetails">
+	<% print(render().oneMonthEnrollmentDetails()); %>
+	</div>
+	<div id="continuousEnrollmentDetails">
+	<% print(render().continuousEnrollmentDetails()); %>
+	</div>
+</script>
+<script id="_registrationInfo" type="text/template">
+	<div id="registrationInfo">
+	<div id="enrollment-details-target" class="secondary-text-format">
+	<div>
+	<p class="title">Enrollment Details</p>
+	</div>
+	<div id="enrollment-important" class="info-cell soft-warn">
+	Important!
+	</div>
+	<div id="enrollment-details-call">
+
+	</div>
+
+	</div>
+
+	<div id="enrollment-details">
+
+	<% print(render().enrollmentDetailsMenu()); %>
+	</div>
+
+	</div>
+</script>
+
+<script id="_enrollmentDetailsCallOpen" type="text/template">
+	<p class="enrollment-details-call">Please <span class="highlight">click here</span> to close.  Then, browse the class offerings below!</p>
+</script>
+
+<script id="_enrollmentDetailsCallClosed" type="text/template">
+	<p class="enrollment-details-call">Please <span class="highlight">click here</span> to read Flip City's enrollment options and details.  Then, browse the class offerings below!</p>
+</script>
+
+<script id="_classesMenu" type="text/template">
+	<div id="classesMenu" class="menu">
+	<div class="secondary-text-format info-row registration-info">
+	<% print(render().registrationInfo()); %>
+	</div>
+
+	<div>
+	<% print(render().programInfo(classes)); %>
+	</div>
+	</div>
+</script>
+
+<script id="_teamsMenu" type="text/template">
+	<div id="teamsMenu" class="menu">
+	<% print(render().programInfo(teams)); %>
+	</div>
+</script>
+
+<script id="_hiringDetailsMenu" type="text/template">
+	<div id="hiringDetailsMenu" class="menu">
+		<img src="images/hiring.jpg" />
+		<div>
+			
+ 			<div class="text-paper"><div class="row"><p class="t-center"><span class="main-emphasis">Current Open Positions</span> <a href="res/data/flipcity-application.pdf" class="primary-link">Download an application!</a></p></div></div>
+ 				  <div class="text-paper"><p class="bold">Instructor</p>
+ 			
+ 			<p>We are happy to offer positions for <span class="bold">Gymnastics Instructors</span>!  We're looking for individuals with a passion for working with small groups of children and the ability to lead them through gymnastics exercises and drills.  Applicants will be mature individuals age 15 and over with some familiarity with gymnastics (cartwheels, handstands, etc).  This position provides opportunities to improve coaching and leadership skills from beginning gymnastics through USAG level 5!</p>
+<div class="info"><ul>
+	<li>Compensation:
+<ul><li>$9-10/hour</li></li></ul>
+<li>Available Hours:
+<ul><li>Weeknights 4pm - 8pm</li>
+<li>Saturdays 8am - 3pm</li></li></ul>
+<li>Chosen applicants will:
+<ul><li>Commit to a negotiated schedule of at least 2 days/week (Some flexibility in hours is offered when needed).</li>
+<li>Preferably have some customer service experience, but it is not required</li></li></ul>
+</ul></div></div></div>
+ 			
+ 			<div class="text-paper"><p class="bold">Assistant Instructor</p>
+ 			
+ 			<p>We are happy to offer positions for <span class="bold">Assistant Gymnastics Instructors</span>!  We're looking for individuals to help with and occasionally fill in to lead classes.  Applicants will be mature individuals age 14 and over, preferably with some familiarity with gymnastics (cartwheels, handstands, etc).  This position provides opportunities to improve coaching and leadership skills from beginning gymnastics through USAG level 5!</p>
+<div class="info"><ul>
+	<li>Compensation:
+<ul><li>$7.50/hour</li></li></ul>
+<li>Available Hours:
+<ul><li>Weeknights 4pm - 8pm</li>
+<li>Saturdays 8am - 3pm</li></li></ul>
+<li>Chosen applicants will:
+<ul><li>Work a consistent negotiated schedule with opportunities to exchange hours with other coaches</li></li></ul>
+</ul></div>
+</div>
+	</div>
+</script>
+
+
+<!--
+<div class="inlay">
+<ul>
+<li>
+<div class="text-paper">Class session tuition is billed monthly, due on the first class of the month.</p>
+</li>
+<li>
+<div class="text-paper">The gymnast's first and last month's tution is due at class registration.</p>
+</li>
+<li>		<div class="text-paper">Flip City will apply the last month's tutition on the first due date after a cancellation notice is receieved.</p>
+</li>
+<li>		<div class="text-paper">The full month's tuition is due regardless of how many days the gymnast attends classes during that month.</p>
+</li>
+<li>		<div class="text-paper">Tuition is pro-rated if a gymnast enrolls in a class during the middle of the month.</p>
+</li>
+
+<li>		<div class="text-paper">Each gymnast may attend up to 6 make-up classes per year.</p>
+</li>
+<li>		<div class="text-paper">Your gymnast will be automatically unenrolled after being absent for two weeks without notice or payment.</p>
+</li>
+<li>		<div class="text-paper">Flip City offers one free trial class per new student! Select "Trial" as your enrollment type when registering for a class. Note that registration for a trial class will not save a student's spot on the roster.</p>
+</li>
+
+</ul>
+
+</div> -->
+<script id="_faqsMenu" type="text/template">
+	<div id="faqMenu" class="menu wordBoxContainer">
+		<div id="faq-questions">
+			<div class="text-paper">
+			<p class="header">
+			How do I sign up for a class?
+			</p>
+			<p>
+			To register online, click on "Login/Register" in the top right hand corner.  On the Login page, click on "New Account".  Enter your information in the fields provided and click "Continue" at the bottom.
+			</p>
+		
+			<p>
+			Once logged in, click "Find A Class" on the left to see the class schedule.  Use the drop-down filters to adjust which classes are shown.  Click "Submit Request" next to your chosen class to register.  You will receive a confirmation email when we've processed your request.  If you do not receive a confirmation within two business days please call or email to confirm that your request was received.		</p>
+			<p>
+			You may also register by calling the gym at 608-834-1444 or emailing <a class="primary-link" href="mailto:info@flipcity.biz">info@flipcity.biz</a>.  We will need your first and last name, your child's first and last name, your address, your phone number, and your child's date of birth.  A waiver must be signed on or before the first day of class by a legal parent or guardian.		</p>
+				</div>
+				<div class="text-paper">
+			<p class="header">
+			What should students wear to class?
+			</p>
+			<p>
+			Leotards are strongly recommended.  Tight athletic shorts over the leotard are optional.  Other tight fitting athletic attire will be permitted if it allows for proper skill spotting.  Students should not wear skirts, jewelry, buttons, zippers, or socks. Gymnastics shoes are permitted.  Team gymnasts are required to wear leotards.</p>
+			</div>
+			<div class="text-paper">
+			<p class="header">
+			Do you offer a trial class?
+			</p>
+			<p>
+			Yes. Students may attend one class before enrolling.  Signing up for a trial class will not hold a spot for your child at that particular class time.  To reserve a spot, please register for the class.  
+			</p>
+			</div>
+			<div class="text-paper">
+			<p class="header">
+			What are the fees for classes?
+			</p>
+			<p>
+			We charge a monthly tuition.  For class tuition prices please visit the "Classes" tab and click the blue "Schedule & Pricing" button.
+			</p>
+			<p>
+			<u>The first and last month's tuition are due at the time of registration.</u>  Thereafter, tuition is due by the first class of the month.  At least 30 days prior to discontinuing a class, please notify us in writing or via email.  We will then apply your last month's tuition to the last month your child will be attending.		</p>
+			<p>
+			You can make payment at the gym or through your Flip City online account.  If you don't have an account yet, click "Login/Register" in the top right hand corner.  On the Login page, click on "New Account".		</p>
+		</div>
+			<div class="text-paper">
+			<p class="header">
+			What if I forget to notify the gym that my child will be discontinuing class?
+			</p>
+			<p>
+			If your child doesn't attend class and we have not received payment after the second class of the month, we will apply your last month's tuition and drop the student from the class at the end of the month.  In case your child was unable to attend class and payment was forgotten, but you want to continue the class, please make the full month's tuition payment along with a $15 late fee.  Note: Your student's spot in that particular class time will not be guaranteed the following month if payment is two weeks late or more. 		</p>
+		</div>
+			
+			<div class="text-paper">
+			<p class="header">
+			Do you have foam pits?
+			</p>
+			<p>
+			No.  Due to the increased risk, required maintenance, and resources needed to construct a pit, we have chosen not to incorporate them at this time.		</p>
+			<p>
+			Foam pits can be great for teaching advanced competitive gymnastics.  However, they pose significant risk when placed in an area used by younger students.  Children often think it is similar to a swimming pool and attempt front-facing entries such as bellyflops.  This can cause hyper extension of the back or other injuries.  Another common occurrence is students digging holes in a foam pit.  Often a student will accidentally or intentionally jump into the hole, risking hitting the bottom of the pit or causing an avalanche of foam, temporarily trapping students underneath.		<p>
+			</p>
+			<p>
+			Foam pits are also extremely difficult to keep clean.  The spaces in a cube of foam trap sweat and bacteria.  They also grab onto socks, band aids, and other loose items, collecting them at the bottom.
+			</p>
+			<p>
+			With our current program offerings of recreational, preschool, and girls" competitive Levels 1-5, a foam pit would require more risk, maintenance, and resources than it is worth.  As our students advance to the higher levels, we will expand and incorporate foam pits as we see necessary.  		</p>
+			</div>
+			<div class="text-paper">
+			<p class="header">
+			When will the gym close due to weather?
+			</p>
+			<p>
+			Flip City Gymnastics classes and events will be canceled when the Sun Prairie schools close, release students early, or cancel evening events due to weather. Please check our home page for cancellation information.		</p>
+			</div>
+			<div class="text-paper">
+			<p class="header">
+			Do you have directions to the gym?
+			</p>
+			<p>
+				From Hwy 151, go east on Reiner Rd, turn right on O"Keeffe Ave, left on Cremer Dr., right on Capitol Dr., right on Terra Ct., and we are at the end of the cul-de-sac.		</p>
+		</div>
+		</div>
+	</div>
+</script>
+<script id="_aboutUsMenu" type="text/template">
+	<div id="aboutUsMenu" class="menu">
+		<div class="text-paper">
+		<p class="main-emphasis t-center">
+			Flip City's Mission
+		</p>
+		<p>
+			Flip City Gymnastics aims to promote growth and learning through the process and experience of gymnastics training.  Students develop a strong work ethic with an ability to set and reach goals.  Gymnasts are taught and expected to show respect and compassion toward themselves, their peers, and their coaches.
+		</p>
+	</div>
+		<div class="platform bio bio-font">
+			<div class="container">
+				<img src="images/image-katie-h.jpg" />
+				<div class="caption">
+					Katie Wertsch Hollinger, Owner
+				</div>
+			</div>
+			<div class="bio-text">
+				Katie holds a Bachelor’s degree from the University of Wisconsin - Madison in Communication Arts and an associate degree from Madison College in Recreation Management.  She taught tumbling classes for Madison Schools &amp; Community Recreation and DeForest Parks &amp; Recreation, and she coached gymnastics classes at Badger Gymnastics Academy and Madison Turners.  Most recently, she worked as the Recreation Director at Madison Turners through January 2012.  She is a certified USA Gymnastics Junior Olympic team coach.
+				
+			</div>
+			<div id="motivation">
+				<p class="main-emphasis">
+			My Motivation
+		</p>
+		<p>
+			I was introduced to gymnastics in 1996 watching the Magnificent Seven win the first ever Gold Medal for the United States in the Women's Team Competition at the Atlanta Olympics.  I watched these young girls who were focused and dedicated to the most amazing, beautiful sport I had ever seen and I instantly wanted to be like them.  Their achievements made me realize that I didn't have to wait until I reached adulthood to do great things.  I likely would never go to the Olympics, but I was plenty capable of being strong, focused, and disciplined like the girls I watched on television.
+		</p>
+		<p>
+			Once I started learning gymnastics, I did everything I could to get better at it as quickly as possible.  At 10 years old, I was doing 300 sit-ups and 100 pushups each night, not because anyone told me to but because I wanted to get better at gymnastics.  I had something to work for.  I had a reason to do more than watch television all summer.  Soon enough, I was showing off back walkovers and front handsprings to my family and friends.  I realized that I could do skills that most other people, adults included, could not.  I gained a confidence that I had not had before.  Each skill I mastered gave me one more accomplishment of which I could be proud.  I saw where hard work could lead me and that lesson motivated me throughout adolescence, college, and into adulthood.
+		</p>
+		<p>
+			This is what I strive to teach kids every day.  Being young does not mean being incapable of doing great things.  Through gymnastics, kids learn to set and achieve goals.  Each skill mastered is a tangible accomplishment through which they can see their progress and develop confidence in their ability to achieve whatever goals they may choose in life.
+		</p>
+			</div>
+		</div>
+		<div class="platform bio bio-font">
+			<div class="container">
+				<img src="images/image-haley.jpg" />
+				<div class="caption">
+					Haley, Gym Director
+				</div>
+			</div>
+			<div class="bio-text">
+			Haley has been with Flip City Gymnastics since opening in November 2012. She coaches competitive teams and manages gym programs. As a gymnast, she competed with the Beloit Blazers for almost 7 years.  Now she is a certified USA Gymnastics Junior Olympic team coach.  Outside the gym, Haley spends time with her husband, son, and three dogs.			</div>
+		</div>
+	</div>
+</script>
+<script id="_openGymMenu" type="text/template">
+	<div class="menu">
+		<img src="images/opengym.jpg" />
+		<div class="text-paper">
+		
+		<p class="main-emphasis t-center">
+			Open Workshop
+		</p>
+		<p >
+			The gym is open at this time for gymnasts ages 6 - 17 to practice skills and work out.  To help prevent accidents, horseplay will not be allowed.  Parent supervision is not required.
+		</p>
+		<p style="font-weight: bold">
+			 Fridays 6-8pm<br/>
+             $10 per Person
+		</p>
+		</div>
+	</div>
+</script>
+<script id="_birthdaysMenu" type="text/template">
+	<div id="birthdayMenu" class="menu">
+	<img src="images/birthday.jpg" />
+	<div class="text-paper">
+	<p class="main-emphasis t-center">
+		Birthday Parties
+	</p>
+	<p>
+		We provide the plates, napkins, cups, forks, and fun!  You bring the kids and the cake! Please email <a href="mailto:info@flipcity.biz" class="primary-link">info@flipcity.biz</a> to register.
+	</p>
+	<p>
+ 		Parties will begin with 60 minutes of play time in the gym led by a Flip City staff member, followed by 30 minutes in the party room for cake and presents.
+	</p>
+	<p style="font-weight: bold">
+		$160 for up to 10 kids / $10 per additional child.
+	</p>
+	<p style="font-style: italic">
+		Currently enrolled students receive a 15% discount
+	</p>
+</div>
+	</div>
+</script>

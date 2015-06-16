@@ -1,0 +1,29 @@
+{
+	"faqs" : 
+	[
+		{ 
+			"question" : "Do you have directions to the gym?",
+			"answer" : "From Hwy 151, go east on Reiner Rd, turn right on O'Keeffe Ave, left on Cremer Dr., right on Capitol Dr., right on Terra Ct., and we are at the end of the cul-de-sac.'"
+		},
+		{ 
+			"question" : "What should students wear to class?",
+			"answer" : "Leotards are strongly recommended.  Tight athletic shorts over the leotard are optional. Tight fitting athletic attire will be permitted if it allows for proper skill spotting. Students should not wear skirts, jewelry, buttons, zippers, or socks.  Gymnastics shoes are permitted. Team gymnasts are required to wear leotards.  Tight athletic shorts are optional."
+		},
+		{ 
+			"question" : "How do I sign up for a class?",
+			"answer" : ""
+		},
+		{ 
+			"question" : "Do you offer a trial class?",
+			"answer" : "Yes.  Students may attend one class before enrolling.  Afterward, to register for class, you will pay that month's tuition.  If you choose not to register, you will owe nothing.  Please note: Signing up for a trial class will not hold a spot for your child at that particular class time.  To reserve a spot, please pay the first month's tuition.  If you decide to discontinue enrollment within 3 weeks, we will refund tuition paid."
+		},
+		{ 
+			"question" : "When and how should I make payment?",
+			"answer" : "The first month's tuition is due at the time of registration.  Thereafter, tuition is due on the first of the month.  If tuition has not been paid by the 7th of the month, a $10 late fee will be charged.  After the 15th of the month, the student will be dropped from class and a spot will be given to a student on the waitlist."
+		},
+		{ 
+			"question" : "When will the gym close due to weather?",
+			"answer" : "Flip City Gymnastics classes and events will be canceled when the Sun Prairie schools close or release students early due to weather. Please check our home page for cancellation information."
+		}
+	]
+}

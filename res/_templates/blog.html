@@ -1,0 +1,20 @@
+<script id="_blogPosts" type="text/template">
+	<div id="blog" class="main-text-format wordBoxContainer">
+		<% _.each(blogPosts, function(post) { %>
+			<div class="post">
+				<p class="date" style="font-style:italic;" align="left">
+					<%- post.date %>
+				</p>
+				<p class="header">
+					<% if (post.imageURL){ %><img src="images/<%post.imageURL%>" /><%}%><%- post.header %>
+				</p>
+				<p class="body">
+					<% _.each(post.body, function(line) { %>
+							<p><%- line %></p>
+					<% });%>
+				</p>	
+				</p>
+			</div>
+		<% }); %>
+	</div>
+</script>

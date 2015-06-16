@@ -1,0 +1,19 @@
+.movtivation {
+	font-size: 12px;
+}
+
+.bio-container {
+	position: relative;
+	padding: 10px;
+	font-family: Open Sans, sans-serif;
+	font-weight:300;
+	font-size:.9em;
+}
+.bio-element {
+	position: relative;
+	float: left;
+}
+.nomargin {
+	margin: 0;
+}
+

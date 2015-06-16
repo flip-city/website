@@ -1,0 +1,53 @@
+{
+	"classes" : 
+	[
+		{ 
+			"name" : "Parent & Child",
+			"ages" : "Ages 2-3",
+			"description" : "Children learn and play with a parent. The little ones practice jumping, hopping, rolling, balancing, and more.",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=19&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Preschool",
+			"ages" : "Ages 4-5",
+			"description" : "Co-ed clases teach coordination, balance, and body awareness. Students develop basic movement proficiency for gymnastics and other sports.",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=4&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Homeschool Gymnastics",
+			"ages" : "Ages 5+",
+			"description" : "In this introductory class, students practice basic skills on balance beam, uneven bars, vault, rings, and the spring floor.",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&day=&level=21&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Girls Level 1",
+			"ages" : "Ages 6+",
+			"description" : "Students practice basic skills on all four women's events: uneven bars, balance beam, floor exercise and vault. Light strength building exercises and conditioning teach students about general fitness.",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=5&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Girls Level 2/3",
+			"ages" : "Ages 6+",
+			"description" : "Students work on round offs, back handsprings, bar circling skills, handstand vaulting, and more!",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=3&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Boys Beginner & Intermediate",
+			"ages" : "Ages 6+",
+			"description" : "This class works on strength and basic skills for boys gymnastics. Students practice on the spring floor, vault, high bar, and rings.",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&day=&level=24&filters=SUBMIT"
+		},
+		{ 
+			"name" : "PreTeen Workshop",
+			"ages" : "Ages 9-12",
+			"description" : "For students who wish to practice recreational gymnastics at a beginner/intermediate level.",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=13&filters=SUBMIT"
+		},
+		{ 
+			"name" : "Teen Workshop",
+			"ages" : "Ages 13-17",
+			"description" : "A co-ed workout session led by a coach. Students practice on bars, beam, floor, and vault",
+			"link": "https://www.iclassprov2.com/icpv2/parentportal/flipcity/classes?age_range=&gender=&program=&day=&level=15&filters=SUBMIT"
+		}
+	]
+}

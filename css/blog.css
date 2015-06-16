@@ -1,0 +1,161 @@
+
+
+#faqMenu {
+	margin-right: 12px;
+	padding: 10px;
+}
+
+#blog .date {
+	
+}
+
+.seperator {
+	
+	height: 2px;
+	background-color: black;
+	width:70%;
+	margin-left:14%;
+	margin-top: 18px;
+}
+
+#blog .post{
+	margin:10px;
+	display: inline-block;
+	-webkit-box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+	margin-top: 18px;
+	padding: 7px;
+	font-size: 1.15em;	
+}
+
+.text-paper {
+	-webkit-box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+	margin-top: 18px;
+	padding: 7px;
+	font-size: 1.15em;
+	display: inline-block;
+	font-family: Open Sans, sans-serif;
+	font-weight:300;
+	
+}
+
+#aboutUsMenu.menu p {
+	width: 100%;
+}
+
+.inlay .text-paper {
+	font-size: 1em;
+	margin:2px;
+	text-align:left;
+}
+
+.wordBoxContainer .header {
+	font-weight: bold;
+	font-size:1.2em;
+}
+
+#blog .body {
+	font-size: 1em;
+}
+
+#blog .signature {
+	font-style: italic;
+}
+
+#aboutUsMenu {
+	margin-left:10px;
+}
+
+.menu p {
+	margin-top: 7px;
+	display:inline-block;
+	float:left;
+	clear:both;
+	padding: 5px;
+}
+
+.menu p:first-child {
+	margin-top: 0px;
+}
+
+.menu .main-emphasis {
+	margin-top: 10px;
+}
+
+#birthdayMenu img:first-child{
+	width:100%;
+}
+
+#aboutUsMenu .bio {
+	color: #FFF;
+}
+#aboutUsMenu .bio img {
+	width: 140px;
+}
+
+#aboutUsMenu .bio .container {
+	width: 188px;
+}
+
+#aboutUsMenu .bio * {
+	display:inline-block;
+}
+
+#aboutUsMenu .bio {
+	display:inline-block;
+	margin-top:15px;
+	width:612px;
+}
+
+#aboutUsMenu .bio .caption {
+	display: block;
+	margin-top: 7px;
+}
+
+#aboutUsMenu .bio .bio-text {
+	width: 400px;
+	vertical-align:top;
+}
+
+#motivation {
+	width: 600px;
+}
+
+#aboutUsMenu .info-row {
+	display: inline-block;
+	padding: 15px;
+	width: 100px;
+	float:right;
+	margin-bottom:0;
+	cursor:pointer;
+	text-align:center;
+}
+
+.bio-font{
+	font-family: Open Sans, sans-serif;
+	font-weight:300;
+	font-size:1em;
+
+}
+
+
+
+
+.t-center {
+	text-align: center;
+}
+
+#aboutUsMenu .info-row:hover, #aboutUsMenu .info-row:active {
+	background: #965E96
+}
+
+.post-image {
+	width: 10%;
+	y:10pt;
+}
+
+
+

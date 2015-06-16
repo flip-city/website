@@ -1,0 +1,58 @@
+#options-container {
+	position: relative;
+	margin-left: 4px;
+}
+
+.option {
+	float: left;
+	position: relative;
+	margin: 2px;
+	padding: 5px;
+	width: 200px;
+	height: 100%;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+.option-button {
+	margin: 5px;
+	padding-top: 12px;
+	background: #F963BB; /* Old browsers */
+	background: -moz-linear-gradient(top,  #F963BB 1%, #F934A7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#F963BB), color-stop(100%,#F934A7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #F963BB 1%,#F934A7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #F963BB 1%,#F934A7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #F963BB 1%,#F934A7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #F963BB 1%,#F934A7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F963BB', endColorstr='#F934A7',GradientType=0 ); /* IE6-9 */
+	box-shadow: -1px 3px 4px 2px #B2ACA7;
+}
+
+.option-button:hover {
+	background: #F963BB;
+}
+
+.option-button:active {
+	box-shadow: none;
+}
+
+.option-text {
+	font-size: 12px;
+}
+
+.option-image {
+	margin: 0;
+	
+}
+
+#create-account {
+	margin-left: 0px;
+}
+
+#class-schedules {
+	margin-right: 0;
+}

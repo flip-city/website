@@ -1,0 +1,22 @@
+* Align page bottom
+* Finish 'About' page
+* Fill placeholders
+* Set link for registration
+* Revisit left bar
+* X-broswer testing
+* Low browser switch/testing
+* Mobile switch/testing
+* Align tabs
+* Fill gradients
+* Analytics on buttons
+   - Google?
+   age_range=&gender=&program=&day=&level=10&filters=SUBMIT
+   
+
+
+
+
+
+
+// NEW
+* Template each tab page

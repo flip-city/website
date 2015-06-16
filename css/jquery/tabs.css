@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#tabs-parent {
+	display: inline-block;
+	float: left;
+	height: auto;
+}
+
+.section {
+	font-family: Tahoma;
+	font-size: 250%;
+	color: #E0D5BC;
+	padding-left: 5px;
+}
+
+.widget {
+	width: 645px;
+	position: relative;
+	top: -48px;
+	padding: 0;
+}
+
+.widget a {
+	color: #222;
+	text-decoration: none;
+}
+
+.widget a:hover {
+	color: #009;
+	text-decoration: underline;
+}
+
+.tabnav li {
+	display: inline;
+	list-style: none;
+	height: 49px;
+	width: auto;
+	float:right;
+}
+
+.tabnav li a {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	color: #F2DEED;
+	height: 25px;
+	width: auto;
+	border-radius: 10px 10px 0px 0px;
+	padding: 14px 14px 10px 14px;
+	background-color: #DA008A;
+	background: #233857; /* Old browsers */
+	background: #62aee4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #62aee4 0%, #233857 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#62aee4), color-stop(100%,#233857)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #62aee4 0%,#233857 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #62aee4 0%,#233857 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #62aee4 0%,#233857 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #62aee4 0%,#233857 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62aee4', endColorstr='#233857',GradientType=0 ); /* IE6-9 */
+	margin-left: 11px;
+	display: inline-block;
+	position: relative;
+}
+
+.tabnav li a:hover, .tabnav li a:active, .tabnav li.ui-tabs-selected a {
+	background: #FFF6EF;
+	color: #F937A9;
+	text-decoration: none;
+}
+
+.tabnav {
+	height: 49px;
+}
+
+.tabdiv, .promodiv{
+	background: #FFF6EF;
+	height: 100%;
+	width: 650px;
+	min-height: 1000px;
+}
+
+.tabdiv {
+	float:left;
+}
+
+.ui-tabs-hide {
+	display: none;
+}
+
+#home-tabnav {
+	/*padding-top: 24px;
+	 padding-bottom: 5px;
+	 margin-bottom: 0px;
+	 top: -4;*/
+	margin-bottom: 0px;
+}
+#classesMenu #enrollment-details-options {
+	display:inline-block;
+	margin-top:25px;
+}
+#classesMenu #enrollment-details-options li a {
+	padding: 10px;
+	background: #262C2B;
+	text-decoration:none;
+	font-size:1.4em;
+	font-family: Open Sans, sans-serif;
+	font-weight:400;
+}
+#classesMenu #enrollment-details-options li a:hover,
+#classesMenu #enrollment-details-options li a:active,
+#classesMenu #enrollment-details-options li.ui-tabs-selected a {
+	background: #5D5D5D;
+	overflow:hidden;
+	top: 10px;
+}
+#classesMenu #enrollment-details-options li {
+	width: auto;
+display: inline-block;
+margin-bottom: 2px;
+margin-left: 7px;
+}
+
